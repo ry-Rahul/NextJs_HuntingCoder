@@ -1,0 +1,94 @@
+/* Slug_blogPost_page____________________________________________________ */
+.blogContainer {
+    width: 80%;
+    margin: 0 auto;
+}
+.titlePage {
+    font-style: normal;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    text-align: center;
+    color: #264653;
+    border-bottom: 2px solid #264653;
+}
+.titlePage span {
+    font-size: 40px;
+    font-family: "General Sans Medium";
+    font-weight: 600;
+    color: #1c6e65;
+    font-weight: 400;
+}
+.blogMid {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    margin-top: 50px;
+    /* border: 2px solid #264653; */
+}
+.blogImage {
+    /* margin-top: 20px;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border: 5px solid #1c6e65;
+    border-radius: 10px;
+    position: sticky;
+    top: 110px; */
+
+    float: left;
+    height: 400px;
+    width: 400px;
+    margin: 12px;
+    shape-outside: ellipse(50% 50%);
+}
+.blogImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #e0e0e0;
+    box-shadow: -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
+}
+.blogPara {
+    width: 100%;
+    /* height: 600px; */
+    /* overflow-y: auto; */
+    /* margin: 0 auto; */
+    padding: 20px;
+    font-family: "General Sans";
+    font-size: 20px;
+    text-align: justify;
+}
+
+.blogPara::-webkit-scrollbar-width {
+    width: 4px;
+}
+
+@media screen and (max-width: 600px) {
+    .blogContainer {
+        width: 100%;
+        /* margin: 0 auto; */
+    }
+    .titlePage {
+        font-size: 20px;
+        padding: 10px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .titlePage span{
+        font-size: 20px;
+    }
+    .blogImage {
+        float: left;
+        height: 150px;
+        width: 150px;
+    }
+    .blogImage img {
+
+        margin: 0 auto;
+        shape-outside: none;
+    }
+    .blogMid {
+        margin-top: 20px;
+    }
+    
+}

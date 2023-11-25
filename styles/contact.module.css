@@ -1,0 +1,131 @@
+.main {
+    font-family: "Courier New", Courier, monospace;
+    width: 100%;
+    height: 96vh;
+    background-color: white;
+    display: flex;
+    gap: 40px;
+}
+.image {
+}
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container {
+    min-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+.container h1 {
+    font-size: 40px;
+    font-family: "General Sans Medium";
+    font-weight: 600;
+    color: #1c6e65;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.container form {
+    border: 0.5px solid #264653;
+    box-shadow: -2px 0 5px #264653;
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.inputDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 4px;
+}
+.inputDiv label {
+    font-size: 16px;
+    font-family: "General Sans Medium";
+    color: #264653;
+    font-weight: 400;
+}
+.inputDiv input {
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 20px;
+    font-family: "General Sans Medium";
+    font-weight: 600;
+    font-weight: 400;
+
+    border: 1px solid #264653;
+    border-radius: 6px;
+}
+
+.inputDiv textarea {
+    width: 100%;
+    height: 100px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 20px;
+    font-family: "General Sans Medium";
+    font-weight: 600;
+    color: #264653;
+    font-weight: 400;
+
+    border: 1px solid #264653;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 20px;
+    font-family: "General Sans Medium";
+    font-weight: 600;
+    color: white;
+    font-weight: 400;
+    background-color: #264653;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .container {
+        min-width: 100%;
+    }
+    .image {
+        width: 100%;
+        height: 300px;
+    }
+    .container h1 {
+        font-size: 30px;
+    }
+    .container form {
+        padding: 20px 10px;
+    }
+    .inputDiv input {
+        font-size: 16px;
+    }
+    .inputDiv textarea {
+        font-size: 16px;
+    }
+    .btn {
+        font-size: 16px;
+    }
+}
